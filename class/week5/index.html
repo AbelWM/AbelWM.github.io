@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style media="screen">
+      .boldRed{
+        font-weight: bold;
+        color: red;
+      }
+      .height1{
+        height: 75px;
+      }
+      .height2{
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 height1 randomColor">
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2 height2 randomColor">
+
+        </div>
+        <div class="col-md-8 height2 myConsole">
+
+        </div>
+        <div class="col-md-2 height2 randomColor">
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 height1 randomColor">
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      //when the document is loaded
+        $(document).ready(function() {
+          //this function gets a random color between 0 and 255
+          function getRandomColor() {
+            return Math.floor(Math.random() * 255);
+          }
+          //get all the elements (divs) with the class .randomColor
+          var randomColor = $(".randomColor");
+          //loop through all elements
+          //for each element change the css background-color to RGB + three random colors
+          $.each(randomColor, function(index, item) {
+            $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+          })
+
+        })
+      </script>
+    <script>
+
+    //declare an empty array
+    var anotherArray = [];
+
+    //add an element to be an anotherArray
+    anotherArray.push("someData");
+    anotherArray.push(4866);
+
+    console.log("the value of anotherArray:  "+anotherArray);
+
+    //declare an array with values already in it;
+    var myArray = ["testing","this","is","an","sentence","i","will","put","in","a","array"];
+
+    //reference a specific index in the array:
+    console.log("the value at index 2: "+ myArray[2]);
+
+    var numberArray = [87,33,75,80,99,35,78,20,8,100];
+
+    console.log("numberArray "+numberArray);
+
+    //built-in function with arrays
+
+    console.log("the number of elements in numberArray: "+numberArray.length);
+    console.log("with some text in between: "+numberArray.join(";"));
+
+    //var sum = numberArray[0]+numberArray[1]......
+
+    //to loop through an array we need to know 3 things:
+    //1. Index where to start
+    //2. Index where to end
+    //3. the increment
+
+    //start at index 0
+    //do the code block {} as long as i < numberArray.length
+    //next value goes up by 1 (increment is 1);
+
+    var sum = 0;
+    for (var i = 0; i < numberArray.length; i=i+1) {
+      console.log("the current index is "+i);
+      console.log("the value at index "+i+" is "+numberArray[i]);
+      //add to the running total
+      sum = sum + numberArray[i];
+      console.log("the current sum is "+sum);
+    }
+    //loop is finsihed. we can get the total
+    console.log("the average is "+ (sum/numberArray.length));
+
+    //var myArray = ["testing","this","is","an","sentence","i","will","put","in","a","array"];
+    var fullSentence="";
+    for (var j = 0; j < myArray.length; j=j+1) {
+      //add each word
+      fullSentence = fullSentence + myArray[j]+" ";
+
+      //output the full sentence
+      console.log("the full sentence is "+fullSentence);
+
+    }
+
+    //$ means jQuery function
+    //document is the entire html as a built in variable
+    //ready is an 'event'
+    //when the document is ready, execute the function
+    $(document).ready(function(){
+      //get the myConsole elements
+      //call the html function
+      //html function writes HTML
+      //what we give the html function is a parameter of html code
+      $(".myConsole").html("the full sentence is "+fullSentence);
+      //append adds to the existing html
+      //we can of course write actual html
+      $(".myConsole").append("<h1 class='boldRed' >here is another sentence</h1>");
+
+      $(".myConsole").prepend("<div class='boldRed'>Text before all</div>")
+    })
+
+    </script>
+  </body>
+</html>

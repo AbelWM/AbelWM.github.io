@@ -23,7 +23,7 @@
     }
 
     .height2 {
-      height: 300px;
+      height: 500px;
     }
   </style>
 </head>
@@ -81,8 +81,11 @@
     $(document).ready(function() {
 
       function writeToCenter(str) {
-
         $(".myConsole").append("<br>" + str);
+      }
+
+      function writeObjectToCenter(obj) {
+        $(".myConsole").append("<br>" + JSON.stringify(obj) );
       }
 
       writeToCenter("<h4>testing my console</h4>");
@@ -114,7 +117,24 @@
         "doors": "2"
       };
 
-      writeToCenter("here is my object " + myCar)
+      //add a new key value pair
+      myCar.country = "Italy";
+      myCar.seats = 2; //string
+      myCar.isAffordable = false; //boolean
+      myCar.options = ["sunroof","electric","etc"];//array
+
+      writeObjectToCenter(myCar);
+
+      //loop thru every key
+      for (var key in myCar) {
+        writeToCenter("this key is: "+ key + " and the value is "+ myCar[key]);
+      }
+
+      //reference a key this way:
+      writeToCenter(" here is a value "+ myCar["price"]);
+
+      //actually the convention way is this way: dot notation
+        writeToCenter(" here is a value "+ myCar.doors);
 
     }) //end of document
   </script>

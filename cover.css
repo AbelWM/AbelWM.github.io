@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-    color: #fff;
+    color: red;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     position: relative;
@@ -78,7 +78,7 @@ body {
     font-weight: bold;
     color: #fff;
     /* IE8 proofing */
-    color: rgba(255, 255, 255, .75);
+    /* color: rgba(255, 255, 255, .75); */
     border-bottom: 2px solid transparent;
 }
 
@@ -122,9 +122,9 @@ body {
  */
 
 .mastfoot {
-    color: #999;
+    color: red;
     /* IE8 proofing */
-    color: rgba(255, 255, 255, .5);
+    /* color: rgba(255, 255, 255, .5); */ 
 }
 
 

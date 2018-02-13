@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style media="screen">
+    .height1 {
+      height: 100px;
+    }
+
+    .height2 {
+      height: 500px;
+    }
+    .header h1{
+      font-weight: 700;
+    }
+    .absoluteChild{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .flexSpaceAround{
+      display: flex;
+      justify-content:space-around;
+      align-content: center;
+    }
+    .fitHeightWidth{
+      height: 100%;
+      width: 100%;
+    }
+    .flexVertical {
+      display: flex;
+      flex-direction: column;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 height1">
+        <header class="header absoluteChild">
+          <h1>Speed Run</h1>
+        </header>
+      </div>
+
+    <div class="row">
+      <div class="col-md-12 ">
+        <nav class="flexSpaceAround">
+          <a href="#">Games</a>
+          <a href="#">Players</a>
+          <a href="#">Regions</a>
+          <a href="#">Forms</a>
+          <a href="#">Contact Us</a>
+        </nav>
+
+      </div>
+    </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-2 height2 flexVertical">
+        <img src="img/getoverit.png" alt="">
+        <img src="img/cuphead.png" alt="">
+
+      </div>
+      <div class="col-md-8 height2 ">
+        <table class="table table-striped table-hover fitHeightWidth">
+          <tr>
+            <th>Game</th>
+            <th>Player</th>
+            <th>Time</th>
+            <th>Region</th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>Getting Over It With Bennett Foddy</td>
+            <td>Lumonen</td>
+            <td>1m 44s 774ms</td>
+            <td>-</td>
+            <td>2018-02-08</td>
+          </tr>
+          <tr>
+            <td>Cuphead</td>
+            <td>TheMexicanRunner</td>
+            <td>24m 39s 520ms</td>
+            <td>Mexico</td>
+            <td>2018-01-25</td>
+          </tr>
+          <tr>
+            <td>Portal</td>
+            <td>CantEven</td>
+            <td>7m 27s 190ms</td>
+            <td>United States</td>
+            <td>2017-07-15</td>
+          </tr>
+          <tr>
+            <td>Shovel Knight</td>
+            <td>Smaugy</td>
+            <td>42m 28s</td>
+            <td>Sweden</td>
+            <td>2018-01-14</td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-2 height2 randomColor">
+
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-12 height1 randomColor">
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    //when the document is loaded
+    $(document).ready(function() {
+      //this function gets a random color between 0 and 255
+      function getRandomColor() {
+        return Math.floor(Math.random() * 255);
+      }
+      //get all the elements (divs) with the class .randomColor
+      var randomColor = $(".randomColor");
+      //loop through all elements
+      //for each element change the css background-color to RGB + three random colors
+      $.each(randomColor, function(index, item) {
+        $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+      })
+
+    })
+  </script>
+
+</body>
+
+</html>

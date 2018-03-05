@@ -1,0 +1,43 @@
+[
+  {
+    "champion":"Kled: The Cantankerous Cavalier",
+    "passive":"Skaarl, the Cowardly Lizard",
+    "qAbility":"Bear Trap on a Rope",
+    "wAbility":"Violent Tendencies",
+    "eAbility":"Jousting",
+    "rAbility":"Chaaaaaaaarge!!!"
+  },
+  {
+    "champion":"Lee Sin: The Blind Monk",
+    "passive":"Flurry",
+    "qAbility":"Sonic Wave / Resonating Strike",
+    "wAbility":"Safeguard / Iron Will",
+    "eAbility":"Tempest / Cripple",
+    "rAbility":"Dragon's Rage"
+  },
+  {
+    "champion":"Ahri: The Nine-Tailed Fox",
+    "passive":"Essence Theft",
+    "qAbility":"Orb of Deception",
+    "wAbility":"Fox-Fire",
+    "eAbility":"Charm",
+    "rAbility":"Spirit Rush"
+    },
+  {
+    "champion":"Lucian: The Purifier",
+    "passive":"Lightslinger",
+    "qAbility":"Piercing Light",
+    "wAbility":"Ardent Blaze",
+    "eAbility":"Relentless Pursuit",
+    "rAbility":"The Culling"
+  },
+  {
+    "champion":"Thresh: The Chain Warden",
+    "passive":"Damnation",
+    "qAbility":"Death Sentence",
+    "wAbility":"Dark Passage",
+    "eAbility":"Flay",
+    "rAbility":"The Box"
+    }
+
+]

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carousel</title>
+  <title>myJSON</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -44,6 +44,11 @@
       var dataHtml = "";
       for (var i = 0; i < data.length; i++) {
         dataHtml+="<div>"+data[i].champion+"</div>";
+        dataHtml+="<div>"+data[i].passive+"</div>";
+        dataHtml+="<div>"+data[i].qAbility+"</div>";
+        dataHtml+="<div>"+data[i].wAbility+"</div>";
+        dataHtml+="<div>"+data[i].eAbility+"</div>";
+        dataHtml+="<div>"+data[i].rAbility+"</div>";
       }
       //when the document is ready
       $(document).ready(function() {

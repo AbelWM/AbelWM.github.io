@@ -17,6 +17,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
 </head>
 
 <body>
@@ -43,12 +44,14 @@
       //loop thru the data
       var dataHtml = "";
       for (var i = 0; i < data.length; i++) {
+
         dataHtml+="<div>"+data[i].champion+"</div>";
         dataHtml+="<div>"+data[i].passive+"</div>";
         dataHtml+="<div>"+data[i].qAbility+"</div>";
         dataHtml+="<div>"+data[i].wAbility+"</div>";
         dataHtml+="<div>"+data[i].eAbility+"</div>";
         dataHtml+="<div>"+data[i].rAbility+"</div>";
+
       }
       //when the document is ready
       $(document).ready(function() {

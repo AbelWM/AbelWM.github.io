@@ -3,32 +3,32 @@
     "1": {
       "itemId": 1,
       "abeMooTitle": "Nendoroid Ahri",
-      "abeMooPrice":" 55",
-      "abeMooImgUrl": "AbelWM.github.io/class/week11/img/ahri.png"
+      "abeMooPrice": "55",
+      "abeMooImgUrl": "abelwm.github.io/class/week11/img/ahri.png"
     },
     "2": {
       "itemId": 2,
       "abeMooTitle": "Lunar Goddess Diana",
       "abeMooPrice": "25",
-      "abeMooImgUrl": "AbelWM.github.io/class/week11/img/diana.png"
+      "abeMooImgUrl": "abelwm.github.io/class/week11/img/diana.png"
     },
     "3": {
       "itemId": 3,
       "abeMooTitle": "Panda Tibbers",
       "abeMooPrice": "10",
-      "abeMooImgUrl": "AbelWM.github.io/class/week11/img/tibbers.png"
+      "abeMooImgUrl": "abelwm.github.io/class/week11/img/tibbers.png"
     },
     "4": {
       "itemId": 4,
       "abeMooTitle": "Yasuo",
       "abeMooPrice": "65",
-      "abeMooImgUrl": "AbelWM.github.io/class/week11/img/yasuo.png"
+      "abeMooImgUrl": "abelwm.github.io/class/week11/img/yasuo.png"
     },
     "5": {
       "itemId": 5,
       "abeMooTitle": "PROJECT: Zed",
       "abeMooPrice": "20",
-      "abeMooImgUrl": "AbelWM.github.io/class/week11/img/zed.png"
+      "abeMooImgUrl": "abelwm.github.io/class/week11/img/zed.png"
     }
   }
 }

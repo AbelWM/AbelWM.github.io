@@ -93,7 +93,7 @@
       var options = {
         "Anderson 1": "https://andersonguelphjs.github.io/class/week11/myJSON.json",
         "Anderson 2": "https://andersonguelphjs.github.io/class/week11/myJSON2.json",
-        "Abel" : "https://AbelWM.github.io/class/week11/abeMoo.json"
+        "Abel" : "https://abelwm.github.io/class/week11/abeMoo.json"
         //after you will creat a JSON file which will be an option here
       };
       //loop through the object
@@ -146,6 +146,9 @@
         html += "<div data-id='" + jsonObj + "' class='itemContainer'>";
 
         for (key in d[jsonObj]) { //loop through the keys of each object
+
+          var str = String(d[jsonObj][key]);
+
           if (key === "itemId") {
             continue;//continue mean skip this iteration of the loop
           }

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cards</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Righteous" rel="stylesheet">
+
+  <style media="screen">
+
+        /* Eric Meyer CSS Reset begins*/
+        a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+        /* Eric Meyer CSS Reset ends */
+
+    /**
+    * Mobile & General Style
+    */
+
+
+    body {
+      background-image: url(images/pw_maze_black.png);
+      font-family: 'Poiret One', cursive;
+      font-size: 16px;
+      line-height: 1.1;
+      color: #90FD16;
+      padding: 10px;
+    }
+
+    /* deafult hyperlinks */
+
+    a {
+      color: inherit;
+      font-weight: 700px;
+    }
+
+    /* subheadings */
+
+    h2,
+    h3 {
+      font-family: 'Righteous', cursive;
+      font-size: 36px;
+    }
+
+    /* common spacing under headings and paragraphs */
+
+    p,
+    h2,
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    /* inside box/image covering the body paragraphs */
+
+    h2,
+    .preamble {
+      padding-bottom: 10px;
+      margin: 0 auto;
+      clear: both;
+      padding-top: 20px;
+      padding-left: 5px;
+      background-image: url(images/black_linen_v2.png);
+    }
+
+    /**
+      * Header Image
+      */
+
+    h1 {
+      background-image: url(images/opensignsamller.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      color: orange;
+      font-size: 50px;
+      font-weight: 700;
+      height: 300px;
+      margin: -10px -10px 25px -10px;
+
+      text-indent: 120%;
+      white-space: nowrap;
+      overflow: hidden;
+
+      position: relative;
+      z-index: 1000;
+    }
+
+    /**
+    * Neon strip across the page
+    */
+
+    h1::after {
+      content: '';
+      height: 110px;
+      width: 100%;
+      display: block;
+      background-image: url(images/neon.png);
+      background-size: auto 451px;
+
+      position: absolute;
+      bottom: 0;
+
+    }
+
+    /**
+    * Site Footer
+    */
+
+    footer {
+      text-align: center;
+    }
+
+    /**
+    * Sidebar
+    */
+
+    .sidebar {
+      text-align: center;
+    }
+
+    /* sidebar lightbulb */
+
+    .sidebar::before {
+      content: '';
+      height: 250px;
+      width: 100%;
+      display: block;
+      background-image: url(images/neon-bulb.png);
+      background-size: auto 250px;
+      background-repeat: no-repeat;
+      background-position: 50% 0%;
+
+      animation: flash 3s infinite;
+    }
+
+    /* common settings to all sidebar sections */
+
+    .design-selection {
+      font-size: 21px;
+      margin-bottom: 50px;
+    }
+
+    /* spacing between links */
+
+    .design-selection li {
+      margin-bottom: 35px;
+      font-weight: 700;
+    }
+
+    /* force links to wrap */
+
+    .design-selection a {
+      display: block;
+    }
+
+    @media only screen and (min-width: 950px) {
+      body{
+          font-size: 21px;
+      }
+
+    /**
+      * Header Image
+      */
+      h1 {
+          background-image: url(images/opensign.jpg);
+          background-size: 100% 100%;
+          background-position: center;
+      }
+
+    /**
+      * Two-Column Layout
+      */
+      h2,
+      .preamble{
+          max-width: 620px;
+          padding-right: 300px;
+          padding-left: 10px;
+      }
+
+    /**
+      * Sidebar
+      */
+      .sidebar {
+          width: 300px;
+          position: absolute;
+          top: 320px;
+          left: 50%;
+          margin-left: 170px;
+      }
+  }
+
+    /**
+    * CSS Animations
+    */
+
+    @keyframes flash {
+      from,
+      50% to {
+        opacity: 1;
+      }
+
+      75% {
+        opacity: 0;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  		<header >
+  			<h1>Week 11 Presentation</h1>
+        <h2>Cards</h2>
+  		</header>
+
+  		<div class="preamble" >
+  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque mauris in mi fringilla, et porta massa aliquet. Aenean tempor turpis in nulla mattis, vel mollis felis luctus.</p>
+  			<p>You have to Style these <a href="https://iblibs.github.io/class/test.html" target="_blank" title="Cards Template">Cards</a> into a Webpage of your choosing and you can access the <a href="https://raw.githubusercontent.com/iblibs/iblibs.github.io/master/class/test.html" target="_blank" title="raw file">raw file</a> here</p>
+
+  			<h3>Sub Heading</h3>
+  			<p>Nulla eget lacus ut lectus pulvinar ornare quis non velit. Praesent dignissim porta velit, vel vulputate augue. Donec sit amet faucibus libero, a pellentesque metus. Phasellus quam nunc, egestas et diam sit amet, ultrices egestas nulla. Nunc a justo a risus dapibus faucibus. Integer condimentum orci in ex eleifend, in pellentesque mauris blandit. Aenean euismod dui vel turpis venenatis, a porta mi posuere. Pellentesque nec dolor iaculis, porttitor magna at, venenatis massa. Phasellus rutrum, neque posuere imperdiet blandit, magna ligula finibus diam, sit amet posuere quam nunc in leo. Praesent lobortis rutrum ipsum, et tincidunt risus suscipit vel.</p>
+
+  			<h3>Sub Heading</h3>
+  			<p>Phasellus tincidunt, nulla at sollicitudin sodales, leo elit pharetra nunc, id tincidunt mauris nibh vel elit. Nam eget urna nec sem tincidunt fringilla a vitae ligula. Aenean porta pretium malesuada. Pellentesque finibus magna ligula, sit amet euismod est luctus et. Nulla aliquam lacus et ultrices venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque suscipit egestas congue. In in sem a tortor posuere tempus. Nulla vestibulum nisl orci.</p>
+
+  		<!-- Footer -->
+
+  		<footer>
+  			<a href="http://validator.w3.org">HTML</a>
+  			<a href="https://jsoneditoronline.org/">JSON</a>
+  		</footer>
+
+  	</div>
+
+  	<!-- Sidebar -->
+
+  	<aside class="sidebar">
+  			<div class="design-selection">
+  				<h3>Rubric</h3>
+
+  				<nav >
+  					<ul>
+  					<li>
+  						<a>Title/Header</a> 						<a>0/10</a>
+  					</li>
+            <li>
+  						<a>Nav and Body</a> 						<a>0/10</a>
+  					</li>
+            <li>
+  						<a>Cards</a> 					<a>0/10</a>
+  					</li>
+            <li>
+  						<a>jQuery</a> 						<a>0/10</a>
+  					</li>
+            <li>
+  						<a>Styling</a> 						<a>0/10</a>
+  					</li>
+  				</ul>
+  				</nav>
+
+  			</div>
+  	</aside>
+
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

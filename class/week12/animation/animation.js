@@ -43,7 +43,7 @@ function Sprite(options) {
   that.x = options.x; //where is it on the canvas
   that.y = options.y;
   that.deltaX = Math.floor(Math.random() * 5 + 5); //position change
-  that.deltaX *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;//randomize negative or positive
+  that.deltaX *= Math.floor(Math.random() * 2) == 1 ? 1 : -1; //randomize negative or positive
   that.deltaY = Math.floor(Math.random() * 5 + 5);
   that.deltaY *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
   that.image = options.image;
@@ -114,7 +114,7 @@ function destroyAnimation(animation) {
 //create a sprite
 function spawnAnimation() {
 
-  var spriteIndex = Math.floor(Math.random() * spriteImages.length ); //get a random index from spriteImages
+  var spriteIndex = Math.floor(Math.random() * spriteImages.length); //get a random index from spriteImages
   var animationImg = new Image(); //make an image object
   animationImg.src = spriteImages[spriteIndex].spriteMapUrl; //get a random sprite sheet
   var scaleRatio = Math.random() * 0.5 + 0.5; //get a random scale
@@ -150,6 +150,77 @@ var spriteImages = [{
     "width": 809,
     "height": 136,
     "name": "girl"
+  },
+  {
+    "spriteMapUrl": "https://celiafosch.github.io/class/week12/animation/images/henry.png",
+    "numFrames": 5,
+    "width": 480,
+    "height": 480,
+    "name": "Henry"
+  },
+  {
+    "spriteMapUrl": "https://loucasl.github.io/class/week12/animation/images/ari.png",
+    "numFrames": 7,
+    "width": 3134,
+    "height": 422,
+    "name": "ari"
+  },
+  {
+    "spriteMapUrl": "https://sluu01.github.io/class/week12/animation/images/iceCream2.png",
+    "numFrames": 5,
+    "width": 2500,
+    "height": 1259,
+    "name": "dessert"
+  },
+  {
+    "spriteMapUrl": "https://biancabottos.github.io/class/week12/animation/images/sun.png",
+    "numFrames": 6,
+    "width": 500,
+    "height": 100,
+    "name": "sun"
+  },
+  {
+    "spriteMapUrl": "https://sydneygang.github.io/class/images/walk.png",
+    "numFrames": 8,
+    "width": 1472,
+    "height": 325,
+    "name": "walk"
+  },
+  {
+    "spriteMapUrl": "https://julianneferr.github.io/class/week12/animation/images/lightbulb.png",
+    "numFrames": 7,
+    "width": 1000,
+    "height": 200,
+    "name": "lightbulb"
+  },
+  {
+    "spriteMapUrl": "https://chell-github.github.io/class/week12/images/masae.png",
+    "numFrames": 29,
+    "width": 2900,
+    "height": 100,
+    "name": "masae"
+  },
+  {
+    "spriteMapUrl": "https://jresur01.github.io/class/week12/animation/images/steven.png",
+    "numFrames": 7,
+    "width": 1023,
+    "height": 145,
+    "name": "steven"
+  },
+
+  {
+    "spriteMapUrl": "https://alissavalentina.github.io/class/week12/animation/images/winnie2.png",
+    "numFrames": 10,
+    "width": 919,
+    "height": 100,
+    "name": "winnie the pooh"
+  },
+  {
+    "spriteMapUrl": "https://kayevans.github.io/class/week12/animation/images/sprite.png",
+    "numFrames": 10,
+    "width": 1000,
+    "height": 193,
+    "name": "can"
   },
   {
     "spriteMapUrl": "images/pizza.png",

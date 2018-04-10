@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
 body {
   padding-top: 20px;
-  background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+  background-image: url("imgs/tic-tac-toe.png");
   display: none;
 }
 
@@ -46,7 +46,7 @@ hr{
   border-top:1px solid rgba(0,0,0,.1);
 }
 .footer span{
-  margin: 3em;
+  margin: 35em;
 }
 
 /**/

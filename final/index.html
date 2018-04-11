@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styleSheet.css">
+  <link rel="stylesheet" href="form.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -116,151 +117,198 @@
         //after you will create a JSON file which will be an option here
       };
       //loop through the object
-      for (var key in options){
-        html+="<option value='"+options[key]+"'>"+key+"</option>";
+      for (var key in options) {
+        html += "<option value='" + options[key] + "'>" + key + "</option>";
       }
       //write the options to the select
       $(".selectContainer").find("select").html(html);
 
     }
-//will contain all the events
-    function initEvents(){
+    //will contain all the events
+    function initEvents() {
       //do this when user changes teh select
-        $(".selectContainer").find("select").on("change", function(){
-          var val = $(this).val();
+      $(".selectContainer").find("select").on("change", function() {
+        var val = $(this).val();
 
-          if (val){//if val exists
-            $.get(val)//use the url to get the json
-            .done(function(data){//success
+        if (val) { //if val exists
+          $.get(val) //use the url to get the json
+            .done(function(data) { //success
               console.log("success get select json! ");
               console.dir(data);
               writeJSONToDOM(data.Sheet1);
             })
-            .fail(function(data){//fail
+            .fail(function(data) { //fail
               console.log("fail get select json! ");
               console.dir(data);
             })
+        }
+        //alert("value "+val);
+      }) ///end select change
+
+      // event delegation ; put this on any of this kind that shows up
+      // $(".buyButton").on("click",function () {
+      //   console.log("clicked buy!");
+      // })
+
+      $("body").on("click", ".buyButton", function() {
+        console.log("clicked buy!");
+        //closest goes up the tree to find the first match
+        var thisItem = $(this).closest(".itemContainer");
+        var itemId = thisItem.attr("data-id");
+
+        //find means go down the tree
+        thisItem.find(".buttonContainer").remove();
+
+        //write this item + form html
+        var html = "<div data-id='" + itemId + "' class='itemContainer'>" + thisItem.html() + "</div>" + formHtml;
+
+        $(".output").html(html);
+
+        //prevent multiple click events
+        return false;
+      })
+
+      $(".logo").on("click", function() {
+        window.location.reload();
+      })
+
+      //delegated event
+      $("body").on("click", ".submit", function() {
+        console.log("clicked sumbmit");
+        //pseudocode:
+        //check if username and password id filled
+        //if not show the modal
+        //if yes, show a confirmation message
+        var username = $(".username").val();
+        var password = $(".password").val();
+
+        if (username && password) {
+          console.log("both are filled");
+          var randomNumber = Math.floor(Math.random() * 1000000);
+          $(".checkoutContainer").html("<div class='confirmationMessage'>Thank you for your order<br>Confirmation #" + randomNumber + "</div>");
+          //simulate sending data to the database
+          //creating a json objects with some info and writing to the screen
+          //add a confirmation message to the screen
+          var itemId = $(".itemContainer").attr("data-id");
+          //$(post) simulation
+          var postObj = {
+            "itemId": itemId,
+            "username": username,
+            "password": password,
+            "cNumber": randomNumber
           }
-          //alert("value "+val);
-        })///end select change
+          $(".checkoutContainer").append("<br><br>" + JSON.stringify(postObj));
 
-        // event delegation ; put this on any of this kind that shows up
-        // $(".buyButton").on("click",function () {
-        //   console.log("clicked buy!");
-        // })
+        } else { //at least one is empty show the modal
+          $(".modal").modal("show");
+        }
+      })
 
-        $("body").on("click",".buyButton", function () {
-          console.log("clicked buy!");
-          //closest goes up the tree to find the first match
-          var thisItem =$(this).closest(".itemContainer");
-          var itemId = thisItem.attr("data-id");
+    } //end iniEvents
 
-          //find means go down the tree
-          thisItem.find(".buttonContainer").remove();
+    function writeJSONToDOM(d) {
+      var html = "";
 
-          //write this item + form html
-          var html = "<div data-id='"+itemId+"' class='itemContainer'>"+thisItem.html()+"</div>"+formHtml;
-
-          $(".output").html(html);
-
-          //prevent multiple click events
-          return false;
-        })
-
-        $(".logo").on("click", function () {
-          window.location.reload();
-        })
-
-        //delegated event
-        $("body").on("click",".submit", function () {
-          console.log("clicked sumbmit");
-          //pseudocode:
-          //check if username and password id filled
-          //if not show the modal
-          //if yes, show a confirmation message
-          var username = $(".username").val();
-          var password = $(".password").val();
-
-          if (username && password){
-            console.log("both are filled");
-            var randomNumber = Math.floor(Math.random()*1000000);
-            $(".checkoutContainer").html("<div class='confirmationMessage'>Thank you for your order<br>Confirmation #"+randomNumber+"</div>");
-            //simulate sending data to the database
-            //creating a json objects with some info and writing to the screen
-            //add a confirmation message to the screen
-            var itemId = $(".itemContainer").attr("data-id");
-            //$(post) simulation
-            var postObj={
-              "itemId":itemId,
-              "username":username,
-              "password":password,
-              "cNumber":randomNumber
-            }
-            $(".checkoutContainer").append("<br><br>"+JSON.stringify(postObj));
-
-          }
-          else {//at least one is empty show the modal
-            $(".modal").modal("show");
-          }
-        })
-
-    }//end iniEvents
-
-    function writeJSONToDOM(d){
-      var html="";
-
-      for(var jsonObj in d){
-        html+="<div data-id='"+jsonObj+"' class='itemContainer'>";
-        for (var key in d[jsonObj]){//loop through the keys of each object
+      for (var jsonObj in d) {
+        html += "<div data-id='" + jsonObj + "' class='itemContainer'>";
+        for (var key in d[jsonObj]) { //loop through the keys of each object
 
           var str = String(d[jsonObj][key]);
 
-          if (key==="itemId"){
-            continue;//continue mean skip this iteration of the loop
+          if (key === "itemId") {
+            continue; //continue mean skip this iteration of the loop
           }
-          if (str.indexOf("github")!==-1){
+          if (str.indexOf("github") !== -1) {
             //if 'github' text appears in the value (-1 means not found)
-            html+="<div class='imageContainer'><img src='https://"+d[jsonObj][key]+"'></div>";
+            html += "<div class='imageContainer'><img src='https://" + d[jsonObj][key] + "'></div>";
+          } else { //otherwise use the key as teh class and teh value as teh text
+            html += "<div class='" + key + "'>" + d[jsonObj][key] + "</div>";
           }
-          else{//otherwise use the key as teh class and teh value as teh text
-            html+="<div class='"+key+"'>"+d[jsonObj][key]+"</div>";
-          }
-        }//inner loop
+        } //inner loop
 
-       html+="<div class='buttonContainer'>";
-       html+="<button type='button' class='buyButton btn-default btn'>Buy</button>";
-       html+="</div>";
-       html+="</div>";
+        html += "<div class='buttonContainer'>";
+        html += "<button type='button' class='buyButton btn-default btn'>Buy</button>";
+        html += "</div>";
+        html += "</div>";
 
-     }//first for loop
+      } //first for loop
 
-        //loop this here
+      //loop this here
       $(".output").html(html);
     }
 
-    var formHtml="";
-    var formUrl ="https://abelwm.github.io/final/form.html";
+    var formHtml = "";
+    var formUrl = "https://abelwm.github.io/final/form.html";
 
     $.get(formUrl)
-    .done(function(data){//success
-      console.log("success get formHtml");
-      console.dir(data);
-      formHtml=data;
-      // writeJSONToDOM(data.Sheet1);
-      $(document).ready(function() {
-        getOptions();
-        getAds();
-        initEvents();
-        $(".selectContainer").find("select").change();
-        $("body").fadeIn();
+      .done(function(data) { //success
+        console.log("success get formHtml");
+        console.dir(data);
+        formHtml = data;
+        // writeJSONToDOM(data.Sheet1);
+        $(document).ready(function() {
+          getOptions();
+          getAds();
+          initEvents();
+          $(".selectContainer").find("select").change();
+          $("body").fadeIn();
+        })
       })
-    })
-    .fail(function(data){//fail
-      console.log("fail get select json! ");
-      console.dir(data);
-    })
+      .fail(function(data) { //fail
+        console.log("fail get select json! ");
+        console.dir(data);
+      })
+  </script>
 
+  
+  <script>
+    $(document).ready(function() {
 
+      $('input[type=password]').keyup(function() {
+        var pswd = $(this).val();
+
+        //validate the length
+        if (pswd.length < 8) {
+          $('#length').removeClass('valid').addClass('invalid');
+        } else {
+          $('#length').removeClass('invalid').addClass('valid');
+        }
+
+        //validate letter
+        if (pswd.match(/[A-z]/)) {
+          $('#letter').removeClass('invalid').addClass('valid');
+        } else {
+          $('#letter').removeClass('valid').addClass('invalid');
+        }
+
+        //validate capital letter
+        if (pswd.match(/[A-Z]/)) {
+          $('#capital').removeClass('invalid').addClass('valid');
+        } else {
+          $('#capital').removeClass('valid').addClass('invalid');
+        }
+
+        //validate number
+        if (pswd.match(/\d/)) {
+          $('#number').removeClass('invalid').addClass('valid');
+        } else {
+          $('#number').removeClass('valid').addClass('invalid');
+        }
+
+        //validate space
+        if (pswd.match(/[^a-zA-Z0-9\-\/]/)) {
+          $('#space').removeClass('invalid').addClass('valid');
+        } else {
+          $('#space').removeClass('valid').addClass('invalid');
+        }
+
+      }).focus(function() {
+        $('#pswd_info').show();
+      }).blur(function() {
+        $('#pswd_info').hide();
+      });
+
+    });
   </script>
 </body>
 

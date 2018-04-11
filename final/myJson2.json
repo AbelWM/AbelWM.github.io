@@ -2,33 +2,63 @@
   "Sheet1": {
     "1": {
       "itemId": 1,
-      "proAndTitle": "Kira risu",
-      "proAndPrice": "¥800",
-      "proAndImgUrl": "andersonguelphjs.github.io/class/week11/img/kirarisu.png"
+      "marAndTitle": "Assassin's Creed Origins",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game1.jpg"
     },
     "2": {
       "itemId": 2,
-      "proAndTitle": "Gera chou",
-      "proAndPrice": "¥1200",
-      "proAndImgUrl": "andersonguelphjs.github.io/class/week11/img/geraCho.png"
+      "marAndTitle": "NBA 2K18 ",
+      "marAndPrice": 39.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game2.jpg"
     },
     "3": {
       "itemId": 3,
-      "proAndTitle": "Melody",
-      "proAndPrice": "¥650",
-      "proAndImgUrl": "andersonguelphjs.github.io/class/week11/img/melody.png"
+      "marAndTitle": "Call of Duty WWII",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game3.jpg"
     },
     "4": {
       "itemId": 4,
-      "proAndTitle": "Mogu Tan",
-      "proAndPrice": "¥150",
-      "proAndImgUrl": "andersonguelphjs.github.io/class/week11/img/moguTan.png"
+      "marAndTitle": "Need For Speed: Payback ",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game4.jpg"
     },
     "5": {
       "itemId": 5,
-      "proAndTitle": "Oshaki",
-      "proAndPrice": "¥750",
-      "proAndImgUrl": "andersonguelphjs.github.io/class/week11/img/oshaki.png"
+      "marAndTitle": "Wolfenstein II: The New Colossus",
+      "marAndPrice": 69.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game5.jpg"
+    },
+    "6": {
+      "itemId": 6,
+      "marAndTitle": "Far Cry 5",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game6.jpg"
+    },
+    "7": {
+      "itemId": 7,
+      "marAndTitle": "Injustice 2 Legendary Edition",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game7.jpg"
+    },
+    "8": {
+      "itemId": 8,
+      "marAndTitle": "Ni No Kuni II: Revenant Kingdom - Premium Edition",
+      "marAndPrice": 99.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game8.jpg"
+    },
+    "9": {
+      "itemId": 9,
+      "marAndTitle": "Armello",
+      "marAndPrice": 39.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game9.jpg"
+    },
+    "10": {
+      "itemId": 10,
+      "marAndTitle": "Wonder Boy: Dragon's Trap",
+      "marAndPrice": 54.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game10.jpg"
     }
   }
 }

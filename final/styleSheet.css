@@ -77,9 +77,12 @@ select{
 
 
 .imageContainer{
-  background-color: #333;
+  /* background-color: #333;
   width: 200px;
-  overflow: hidden;
+  overflow: hidden; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .marAndTitle{
   text-align: center;

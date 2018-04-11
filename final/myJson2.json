@@ -2,62 +2,62 @@
   "Sheet1": {
     "1": {
       "itemId": 1,
-      "marAndTitle": "Assassin's Creed Origins",
+      "marAndTitle": "Star Wars Battlefront II",
       "marAndPrice": 79.99,
       "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game1.jpg"
     },
     "2": {
       "itemId": 2,
-      "marAndTitle": "NBA 2K18 ",
-      "marAndPrice": 39.99,
+      "marAndTitle": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+      "marAndPrice": 36.99,
       "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game2.jpg"
     },
     "3": {
       "itemId": 3,
-      "marAndTitle": "Call of Duty WWII",
-      "marAndPrice": 79.99,
+      "marAndTitle": "Final Fantasy XV - Royal Edition ",
+      "marAndPrice": 59.99,
       "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game3.jpg"
     },
     "4": {
       "itemId": 4,
-      "marAndTitle": "Need For Speed: Payback ",
-      "marAndPrice": 79.99,
+      "marAndTitle": "Life is Strange: Before The Storm - Limited Edition",
+      "marAndPrice": 49.99,
       "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game4.jpg"
     },
     "5": {
       "itemId": 5,
-      "marAndTitle": "Wolfenstein II: The New Colossus",
-      "marAndPrice": 69.99,
+      "marAndTitle": "South Park - The Stick of Truth",
+      "marAndPrice": 29.99,
       "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game5.jpg"
     },
     "6": {
       "itemId": 6,
-      "marAndTitle": "Far Cry 5",
-      "marAndPrice": 79.99,
+      "marAndTitle": "Tom Clancy's Rainbow Six Siege - Advanced Edition",
+      "marAndPrice": 69.99,
       "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game6.jpg"
     },
     "7": {
       "itemId": 7,
-      "marAndTitle": "Injustice 2 Legendary Edition",
+      "marAndTitle": "UFC 3",
       "marAndPrice": 79.99,
       "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game7.jpg"
     },
     "8": {
       "itemId": 8,
-      "marAndTitle": "Ni No Kuni II: Revenant Kingdom - Premium Edition",
-      "marAndPrice": 99.99,
+      "marAndTitle": "Monster Hunter World",
+      "marAndPrice": 79.99,
       "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game8.jpg"
     },
     "9": {
       "itemId": 9,
-      "marAndTitle": "Armello",
-      "marAndPrice": 39.99,
+      "marAndTitle": "Dragon Ball FighterZ",
+      "marAndPrice": 79.99,
       "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game9.jpg"
     },
     "10": {
       "itemId": 10,
-      "marAndTitle": "Wonder Boy: Dragon's Trap",
-      "marAndPrice": 54.99,
+      "marAndTitle": "Sea of Thieves",
+      "marAndPrice": 79.99,
       "marAndImgUrl": "abelwm.github.io/final/imgs/games/xbox/game10.jpg"
     }
   }

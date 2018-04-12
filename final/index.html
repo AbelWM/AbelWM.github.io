@@ -11,7 +11,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styleSheet.css">
-  <link rel="stylesheet" href="form.css">
+
+
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <!-- Include the above in your HEAD tag ---------->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,20 +51,33 @@
         Rated Gamer
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-12">
-        <div class="selectContainer flexSpaceAround">
-          <div class="selectLabel">
-            Choose another product type :
+        <nav class="navbar">
+          <div class="selectContainer ">
+            <div class="border flexSpaceAround">
+            <div class="selectLabel">
+              Choose another product type :
+            </div>
+            <div>
+              <select class="form-control" name=""></select>
+            </div>
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search Games">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
           </div>
-          <div>
-            <select class="form-control" name="">
+          </div>
+        </nav>
 
-    </select>
-          </div>
-        </div>
+
       </div>
     </div>
+
+
     <div class="row">
       <div class="col-md-2 adsLeft">
 
@@ -72,17 +89,105 @@
 
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-12 footer">
         <hr>
         <span>© 2018 Rated Gamer</span>
       </div>
+    </div> -->
+
+    <!-- <footer id="footer-Section">
+      <div class="footer-top-layout">
+        <div class="container">
+          <div class="row">
+
+            <div class=" col-lg-8 ">
+              <div class="col-sm-4">
+                <div class="footer-col-item">
+                  <h4>Information</h4>
+                  <address>
+                  1028 Bridgeport Rd<br>
+                  Milton, Ontario<br>
+                  L9T 1P4
+                  </address>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="footer-col-item">
+                  <h4>Reach Us</h4>
+                  <div class="item-contact"> <a href="tel:630-885-9200"><span class="link-id">P</span>:<span>630-885-9200</span></a>
+                    <a href="mailto:info@ratedgamer.com"><span class="link-id">E</span>:<span>info@ratedgamer.com</span></a> </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="footer-col-item">
+                  <h4>Sign up for Newsletter</h4>
+                  <form class="signUpNewsletter" action="" method="get">
+                    <input name="" class="gt-email form-control" placeholder="You@youremail.com" type="text">
+                    <input name="" class="btn-go" value="Go" type="button">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-layout">
+        <div class="socialMedia-footer">
+          <a href="#"><img src="img/socialMedia_01.png"></a> <a href="#"><img src="img/socialMedia_02.png"></a>
+          <a href="#"><img src="img/socialMedia_03.png"></a> <a href="#"><img src="img/socialMedia_04.png"></a>
+          <a href="#"><img src="img/socialMedia_05.png"></a> </div>
+        <div class="copyright-tag">Copyright © 2018 Rated Gamer. All Rights Reserved.</div>
+      </div>
+    </footer>  -->
+</div>
+
+<footer id="footer-Section">
+  <div class="footer-top-layout">
+    <div class="container">
+      <div class="row">
+
+        <div class=" col-lg-8 col-lg-offset-2">
+          <div class="col-sm-4">
+            <div class="footer-col-item">
+              <h4>Information</h4>
+              <address>
+              1028 Bridgeport Rd<br>
+              Milton, Ontario<br>
+              L9T 1P4
+              </address>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer-col-item">
+              <h4>Reach Us</h4>
+              <div class="item-contact"> <a href="tel:630-885-9200"><span class="link-id">P</span>:<span>630-885-9200</span></a>
+                <a href="mailto:info@ratedgamer.com"><span class="link-id">E</span>:<span>info@ratedgamer.com</span></a> </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer-col-item">
+              <h4>Sign up for Newsletter</h4>
+              <form class="signUpNewsletter" action="" method="get">
+                <input name="" class="gt-email form-control" placeholder="You@youremail.com" type="text">
+                <input name="" class="btn-go" value="Go" type="button">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</footer>
+
+
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- footer script -->
+  <script src="https:////netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="https:////code.jquery.com/jquery-1.11.1.min.js"></script>
   <script>
     function getAds() {
 
@@ -111,7 +216,6 @@
       var html = "";
       var options = {
         "PS4 Games": "https://abelwm.github.io/final/myJson.json",
-        // AbelWM.github.io/final/myJson.json
         "Xbox One Games": "https://abelwm.github.io/final/myJson2.json",
         "Nintendo Switch Games": "https://abelwm.github.io/final/myJson3.json"
         //after you will create a JSON file which will be an option here
@@ -199,7 +303,8 @@
           }
           $(".checkoutContainer").append("<br><br>" + JSON.stringify(postObj));
 
-        } else { //at least one is empty show the modal
+        }
+        else { //at least one is empty show the modal
           $(".modal").modal("show");
         }
       })
@@ -260,56 +365,6 @@
       })
   </script>
 
-  
-  <script>
-    $(document).ready(function() {
-
-      $('input[type=password]').keyup(function() {
-        var pswd = $(this).val();
-
-        //validate the length
-        if (pswd.length < 8) {
-          $('#length').removeClass('valid').addClass('invalid');
-        } else {
-          $('#length').removeClass('invalid').addClass('valid');
-        }
-
-        //validate letter
-        if (pswd.match(/[A-z]/)) {
-          $('#letter').removeClass('invalid').addClass('valid');
-        } else {
-          $('#letter').removeClass('valid').addClass('invalid');
-        }
-
-        //validate capital letter
-        if (pswd.match(/[A-Z]/)) {
-          $('#capital').removeClass('invalid').addClass('valid');
-        } else {
-          $('#capital').removeClass('valid').addClass('invalid');
-        }
-
-        //validate number
-        if (pswd.match(/\d/)) {
-          $('#number').removeClass('invalid').addClass('valid');
-        } else {
-          $('#number').removeClass('valid').addClass('invalid');
-        }
-
-        //validate space
-        if (pswd.match(/[^a-zA-Z0-9\-\/]/)) {
-          $('#space').removeClass('invalid').addClass('valid');
-        } else {
-          $('#space').removeClass('valid').addClass('invalid');
-        }
-
-      }).focus(function() {
-        $('#pswd_info').show();
-      }).blur(function() {
-        $('#pswd_info').hide();
-      });
-
-    });
-  </script>
 </body>
 
 </html>

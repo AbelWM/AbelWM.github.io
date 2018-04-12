@@ -24,13 +24,24 @@ body {
 }
 
 .border {
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
     border-color: #e7e7e7;
-    border-style: solid;
+    /* border-style: solid; */
     border-width: 1px;
     margin-top: 20px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
+.selectLabel {
+    background-color: white;
+    border-radius: 5px;
+    border: 2px;
+    height: 35px;
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 210px;
+}
 
 .search{
   text-indent: -999999px;
@@ -53,18 +64,25 @@ body {
   text-shadow: #EDEDED 3px 2px 0;
   position: relative;
 }
-.header {
-  margin: -220px 352px;
-      top: 32px;
-      z-index: -5;
-      display: block;
-      width: 100%;
-      background-image: url(imgs/header2.png);
-      background-size: 1138px 451px;
-      background-repeat: no-repeat;
-      position: absolute;
-      bottom: 0;
+
+.logo{
+   width:100%;
+   height:300px;
+   background: #000000 url(imgs/header3.png) ;
+   background-repeat: no-repeat;
+   text-align:center;
+   padding-left: 0px;
+   padding-right: 0px;
+   margin-top: -20px;
+   margin-bottom: -75px;
 }
+
+.naV{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
 /*footer*/
 hr{
   border-top:1px solid rgba(0,0,0,.1);
@@ -86,7 +104,7 @@ hr{
 /*selectContainer*/
 .selectContainer{
   margin: 0 auto;
-  padding-top: 4em;
+  /* padding-top: 4em; */
   padding-bottom: 2em;
 }
 select{
@@ -96,6 +114,7 @@ select{
 /*output*/
 .itemContainer{
   width: 200px;
+  padding-bottom: 20px;
 }
 
 
@@ -109,7 +128,7 @@ select{
 }
 .marAndTitle{
   text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-family: Helvetica;
     font-weight: bold;
     font-size: 16px;

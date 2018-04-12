@@ -5,15 +5,16 @@
 
 body {
   padding-top: 20px;
-  background-image: url("imgs/tic-tac-toe.png");
+  background-image: url("imgs/pw_maze_black.png");
   display: none;
 }
 
 .output{
-  background-image: url("imgs/dust_scratches.png");
+  background-image: url("imgs/black_linen_v2.png");
   padding-top: 1em;
   flex-wrap: wrap;
   margin-top: -15px;
+  padding-bottom: 3em;
 }
 
 .flexSpaceAround{
@@ -30,6 +31,14 @@ body {
     margin-top: 20px;
 }
 
+
+.search{
+  text-indent: -999999px;
+  background-image: url("imgs/search-icon.png");
+  width: 32px;
+  background-repeat: no-repeat;
+}
+
 /*header*/
 .logo {
   font-family: 'Open Sans', sans-serif;
@@ -44,19 +53,17 @@ body {
   text-shadow: #EDEDED 3px 2px 0;
   position: relative;
 }
-.logo:after {
-  text-align:center;
-  content:"チンドウグドトコム";
-  position: absolute;
-  left: 8px;
-  top: 32px;
-  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-  background-size: 4px 4px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -5;
-  display: block;
-  text-shadow: none;
+.header {
+  margin: -220px 352px;
+      top: 32px;
+      z-index: -5;
+      display: block;
+      width: 100%;
+      background-image: url(imgs/header2.png);
+      background-size: 1138px 451px;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
 }
 /*footer*/
 hr{
@@ -79,7 +86,7 @@ hr{
 /*selectContainer*/
 .selectContainer{
   margin: 0 auto;
-  padding-top: 3em;
+  padding-top: 4em;
   padding-bottom: 2em;
 }
 select{
@@ -106,14 +113,22 @@ select{
     font-family: Helvetica;
     font-weight: bold;
     font-size: 16px;
+    color: white;
 }
 .marAndPrice{
   text-align: center;
   font-style: italic;
   font-size: 11px;
 }
-.checkoutContainer{
+.checkoutContainer {
+  color: white;
   width:66%;
+}
+.checkoutContainer h2{
+  color: white;
+}
+.checkoutContainer h4{
+  color: white;
 }
 .buttonContainer{
   text-align: center;

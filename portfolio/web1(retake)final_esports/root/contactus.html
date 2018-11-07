@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>eSports Nation</title>
+     <!-- main site stylesheet -->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    
+</head>
+
+    <body>
+    <header id="main-header">
+        <h1>eSports Nation</h1>
+    </header>
+
+    <nav class="main-nav">
+        <!-- main site navigation -->
+        <ul id="site-links">
+                <li><a href="index.html">Home</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="contactus.html">Contact us</a></li>
+        </ul>
+        <!-- social media navigation -->
+        <ul id="social-links">
+            <li><a class="fa fa-twitter" href="https://twitter.com"><span>Twitter</span></a></li>
+            <li><a class="fa fa-facebook" href="https://facebook.com"><span>Facebook</span></a></li>
+            <li><a class="fa fa-google-plus" href="https://plus.google.com"><span>GooglePlus</span></a></li>
+        </ul>
+    </nav>
+        
+        <main id="contact-page">
+        <!-- two column blog post -->
+        <article class="two-column-contact">
+            <h2 id="home">Contact us</h2>
+           <p>Have  any questions or want to provide us with feedback relating to the contents of the webpage?</p>
+		
+		<br><br><br><br>
+            <form action="email.php" method="post">
+			
+			<p>
+				First name<br>
+				<input type="text" name="firstname" size="50">
+			</p>
+			<p>
+				Last name<br>
+				<input type="text" name="lastname" size="50">
+			</p>
+			<p>
+				Phone number<br>
+				<input type="text" name="phonenumber" size="15" maxlength="12">
+			</p>
+			<p>
+				Email address<br>
+				<input type="text" name="email" size="50">
+			</p>
+				
+			<p>Questions or Comments:<br>
+				<textarea rows="10" style="width: 300px;">
+				</textarea>
+            </p>
+                
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+				
+			<a href="#" class="button glass">Submit</a>
+
+		  </form>
+        </article>        
+        
+        </main>
+ 
+        <footer id="copyright">&copy; Guelph-Humber 2017<br> Email us at <a href="mailto:eSports@esportsnation.ca" title="Click to Email">eSports@esportsnation.ca</a></footer>
+</body>
+</html>

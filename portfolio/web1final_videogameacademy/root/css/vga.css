@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:400,300,700|Lobster);
+@import url(font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* basic typography */
+
+body{
+    font-family: Exo, sans-serif;
+    color: aqua;
+    font-size: ; 25px;
+    line-height: 1.2; /* 30px divided by 25px (line-height/font size) */ 
+    background: url(../images/escheresque_ste.png);
+}
+/* all the headings */
+h2, h3, h4, h5, h6 {
+    font-family: Exo, sans-serif;
+    font-size: ; 25px;
+    color: aqua;
+    
+}
+/* blog headings */
+h2 {
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* main site title in the header */
+#main-header h1 {
+    font-family: Bangers, serif;
+    font-size: 92px;
+    text-align: center;
+    padding-top: 100px;
+    color: #0054ff; 
+    -webkit-text-stroke: 2px black; 
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* nav links */
+.main-nav a{
+    font-size: 31px;
+    color:black;
+    color: #0054ff;
+    -webkit-text-stroke: 2px black; 
+    text-decoration: none; /*removes the underline */
+}
+
+#site-links a{
+    font-family: Lobster, serif;
+}
+#sub-links a{
+    font-family: Lobster, serif;
+}
+
+/* opposing floats: site-links goes on the left
+social links goes on the right */
+#site-links {
+    float: left;
+}
+
+#social-links {
+    float: right;
+}
+
+/* creates a little vertical space around the icons */
+#social-links a{
+    line-height: 50px;
+    color: #000000;
+}
+
+/* hide the text labels for each social link */
+#social-links a span{
+    display: none;
+}
+
+/* main header styles */
+#main-header{
+    min-height: 245px;
+    background-color: #17161c; /* ctrl e to open up color picker while hovering #888 */
+    background-image: url(../images/light_patrol_by_wacalac_fixed.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+/* main nav styles */
+.main-nav{
+    max-width: 940px;
+    margin: 0 auto; /* center the nav within the page */
+}
+
+.main-nav li{
+    float: left;
+    margin-right: 22px;
+}
+
+/* home page styles */
+#home {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+#home-page{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 75px;
+    background: url(../images/dark_dotted.png);
+    
+}
+
+.two-column p {
+    max-width: 432px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 20px;
+    float: left;
+    
+}
+
+
+#blog-posts{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+    
+}
+
+#sub-links{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+    
+}
+/* content layout styles */
+
+.post {
+    clear: both;
+}
+
+.align-left{
+    float: left;
+    margin-right: 20px;
+}
+
+.align-right{
+    float: right;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.walkthrough figure{
+    max-width: 300px;
+    float:left;
+    margin-right: 20px
+}
+
+.walkthrough .last {
+    margin-right: 0;
+}
+
+.three-column figure{
+    max-width: 300px;
+    float:left;
+    margin-right: 20px
+}
+
+.three-column .last {
+    margin-right: 0;
+}
+
+.funnymoments {
+    text-align: center;
+}
+
+#copyright {
+    clear:both;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* top games page styles */
+#top-games{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.out-now {
+    clear: both;
+    float: left;
+}
+
+.coming-soon {
+    clear: both;
+    display: inline-block;
+    padding-left: 180px;
+}
+
+.reviews {
+    padding-top: 100px;
+    clear:both;
+    text-align: center;
+}
+
+em{
+    font-style: normal;
+    /* text-decoration: underline; */
+    font-weight: 700;
+}
+
+.game{
+    padding-top: 15px;
+}
+
+.topspace{
+    margin: 1em 0;
+}
+
+/* hyperlink styles */
+a{
+    /* sets all links to black */
+    color: #ffffff;
+    /* removes underlines from all links */
+    text-decoration:underline;
+}

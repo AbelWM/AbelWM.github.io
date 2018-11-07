@@ -1,0 +1,64 @@
+{
+  "Sheet1": {
+    "1": {
+      "itemId": 1,
+      "marAndTitle": "Super Mario Odyssey",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/switch/game1.jpg"
+    },
+    "2": {
+      "itemId": 2,
+      "marAndTitle": "Mario + Rabbids Kingdom Battle",
+      "marAndPrice": 39.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/switch/game2.jpg"
+    },
+    "3": {
+      "itemId": 3,
+      "marAndTitle": "Pokken Tournament DX",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/switch/game3.jpg"
+    },
+    "4": {
+      "itemId": 4,
+      "marAndTitle": "Xenoblade Chronicles 2",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/switch/game4.jpg"
+    },
+    "5": {
+      "itemId": 5,
+      "marAndTitle": "Splatoon 2 Starter Edition",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/switch/game5.jpg"
+    },
+    "6": {
+      "itemId": 6,
+      "marAndTitle": "Scribblenauts Showdown",
+      "marAndPrice": 49.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/switch/game6.jpg"
+    },
+    "7": {
+      "itemId": 7,
+      "marAndTitle": "Bayonetta 2",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/switch/game7.jpg"
+    },
+    "8": {
+      "itemId": 8,
+      "marAndTitle": "Kirby Star Allies",
+      "marAndPrice": 79.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/switch/game8.jpg"
+    },
+    "9": {
+      "itemId": 9,
+      "marAndTitle": "RIME",
+      "marAndPrice": 49.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/switch/game9.jpg"
+    },
+    "10": {
+      "itemId": 10,
+      "marAndTitle": "Snipperclips Plus",
+      "marAndPrice": 39.99,
+      "marAndImgUrl": "abelwm.github.io/final/imgs/games/switch/game10.jpg"
+    }
+  }
+}

@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url(font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* basic typography */
+
+body{
+    font-family: Exo, sans-serif;
+    color: aqua;
+    font-size: ; 25px;
+    line-height: 1.2; /* 30px divided by 25px (line-height/font size) */ 
+    background: #2F4F4F	 url(../images/escheresque_ste.png);
+}
+/* all the headings */
+h2, h3, h4, h5, h6 {
+    font-family: Exo, sans-serif;
+    font-size: ; 25px;
+    color: aqua;
+    
+}
+/* blog headings */
+h2 {
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #32cd32;
+}
+/* main site title in the header */
+#main-header h1 {
+    font-family: Bangers, serif;
+    font-size: 92px;
+    text-align: center;
+    padding-top: 100px;
+    color: #0054ff; 
+    -webkit-text-stroke: 2px black; 
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* nav links */
+.main-nav a{
+    font-size: 31px;
+    color:black;
+    color: #0054ff;
+    -webkit-text-stroke: 1.5px black; 
+    text-decoration: none; /*removes the underline */
+}
+
+#site-links a{
+    font-family: 'Fjalla One', sans-serif;
+}
+#sub-links a{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* opposing floats: site-links goes on the left
+social links goes on the right */
+#site-links {
+    float: left;
+}
+
+#social-links {
+    float: right;
+}
+
+/* creates a little vertical space around the icons */
+#social-links a{
+    line-height: 50px;
+    color: #000000;
+}
+
+/* hide the text labels for each social link */
+#social-links a span{
+    display: none;
+}
+
+/* main header styles */
+#main-header{
+    margin-bottom: 10px;
+    min-height: 245px;
+    background-color: #17161c; /* ctrl e to open up color picker while hovering #888 */
+    background-image: url(../images/leaguestadium.jpg);
+    height: 400;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+/* main nav styles */
+.main-nav{
+    max-width: 940px;
+    margin: 0 auto; /* center the nav within the page */
+}
+
+.main-nav li{
+    float: left;
+    margin-right: 22px;
+}
+
+/* home page styles */
+#home {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+#home-page{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 75px;
+    background: #000000 url(../images/dark_dotted.png);
+    
+}
+
+.two-column p {
+    max-width: 432px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 20px;
+    float: left;
+    
+}
+
+.two-column figure {
+    float: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    
+}
+
+#games{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 320px;
+    background: #000000 url(../images/dark_dotted.png);
+}
+
+#overwatch{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: #000000 url(../images/dark_dotted.png);
+}
+
+#lol{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: #000000 url(../images/dark_dotted.png);
+}
+
+#cod{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: #000000 url(../images/dark_dotted.png);
+}
+
+#csgo{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: #000000 url(../images/dark_dotted.png);
+}
+
+.news{
+    padding-top: 20px;
+    max-width: 940px;
+    margin: 0 auto; /* center the nav within the page */
+}
+
+.videos{
+    padding-top: 320px;
+    max-width: 940px;
+    margin: 0 auto; /* center the nav within the page */
+}
+
+.three-column figure{
+    max-width: 300px;
+    float:left;
+    margin-right: 20px
+}
+
+.three-column .last {
+    margin-right: 0;
+}
+
+/* top games page styles */
+#game-charts{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.lolteams-standings {
+    clear: both;
+    float: left;
+    padding-left: 80px;
+}
+
+.lolteams-standings h2 {
+    margin-left: -30px;
+}
+
+
+.lolteams-standings ul {
+    padding-top: 10px;
+}
+
+.lolworld-tournament {
+    clear: both;
+    display: inline-block;
+    padding-left: 80px;
+}
+
+.lolworld-tournament h2{
+     margin-left: -50px;
+}
+
+.lolworld-tournament ol{
+     padding-top: 3px;
+}
+
+.overwatchteams-standings {
+    clear: both;
+    float: left;
+    padding-left: 180px;
+}
+
+.overwatchteams-standings h2 {
+    margin-left: -30px;
+}
+
+.overwatchteams-standings ul {
+    padding-top: 10px;
+}
+
+.overwatchworld-tournament {
+    clear: both;
+    display: inline-block;
+    padding-left: 290px;
+}
+
+.overwatchworld-tournament h2 {
+  margin-left: -70px;
+    padding-bottom: 10px;
+}
+
+.codteams-standings {
+    clear: both;
+    float: left;
+    padding-left: 80px;
+}
+
+.codteams-standings h2 {
+    margin-left: 0px;
+}
+
+.codteams-standings ul {
+    padding-top: 10px;
+}
+
+.codworld-tournament {
+    clear: both;
+    display: inline-block;
+    padding-left: 280px;
+}
+
+.codworld-tournament h2{
+     margin-left: -50px;
+}
+
+.codworld-tournament ol{
+     padding-top: 3px;
+}
+
+.csgoteams-standings {
+    clear: both;
+    float: left;
+    padding-left: 80px;
+}
+
+.csgoteams-standings h2 {
+    margin-left: 0px;
+}
+
+.csgoteams-standings ul {
+    padding-top: 10px;
+}
+
+.csgoworld-tournament {
+    clear: both;
+    display: inline-block;
+    padding-left: 280px;
+}
+
+.csgoworld-tournament h2{
+     margin-left: -50px;
+}
+
+.csgoworld-tournament ol{
+     padding-top: 3px;
+}
+
+em{
+    font-style: normal;
+    /* text-decoration: underline; */
+    font-weight: 700;
+}
+
+.game{
+    padding-top: 15px;
+}
+
+.topspace{
+    margin: 1em 0;
+}
+
+/* hyperlink styles */
+a{
+    /* sets all links to black */
+    color: #ffffff;
+    /* removes underlines from all links */
+    text-decoration:underline;
+}
+
+.two-column-contact p {
+    max-width: 732px;
+    margin-top: px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 45px;
+    float: left;
+    
+}
+
+#contact-page{
+    /* stop nav floats from messing up content position */
+    clear: both;
+    /* clear content in browser */
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 300px;
+    background: #000000 url(../images/dark_dotted.png);
+    
+}
+
+/* button styles */
+.glass{
+	/* background styles */
+    margin-top: 215px;
+    float: left;
+    margin-left: -327px;
+	position: relative;
+	display: inline-block;
+	padding: 5px 5px;
+	background-color: green; /*for compatibility with older browsers*/
+	background-image: linear-gradient(green,lightgreen);
+
+	/* text styles */
+	text-decoration: none;
+	color: aqua;
+	font-size: 20px;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 5;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px -2px #333;
+    text-shadow: 0px -1px #333;
+}
+
+.glass:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+
+.glass:hover{
+	background: linear-gradient(#073,#0fa);
+}
+
+/* footer */
+#copyright {
+    clear:both;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h3 {
+    float: left;
+    padding-top: 1px;
+}
+
+/* table */
+table, th, td {
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-right: 0px;
+}
+
+th, td {
+    padding: 10px;
+}

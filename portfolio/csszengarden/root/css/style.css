@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+/* Eric Meyer CSS Reset begins*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* Eric Meyer CSS Reset ends */
+
+/**
+ * Mobile & General Style
+ */
+body {
+    background-image: url(../images/pw_maze_black.png);
+    font-family: 'Poiret One', cursive;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #90FD16;
+    padding: 10px;
+}
+
+/* deafult hyperlinks */
+a {
+    color: inherit;
+    font-weight: 700px;
+}
+
+/* subheadings */
+h2, h3 {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+}
+
+/* common spacing under headings and paragraphs */
+p, h2, h3 {
+    margin-bottom: 20px;
+}
+
+/* inside box/image covering the body paragraphs */
+h2,
+    .summary,
+    .preamble,
+    .main {
+        padding-bottom: 10px;
+        margin: 0 auto;
+        clear: both;
+        padding-top: 20px;
+        padding-left: 5px;
+        background-image: url(../images/black_linen_v2.png);
+    }
+
+/**
+ * Header Image
+ */
+h1 {
+    background-image: url(../images/opensignsamller.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    color: orange;
+    font-size: 50px;
+    font-weight: 700;
+    height: 300px;
+    margin: -10px -10px 25px -10px;
+    
+    text-indent: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    position: relative;
+    z-index: 1000;
+}
+
+/**
+ * Site title that is acting as the header
+ */
+h1::before {
+    content: '';
+    height: 185px;
+    width: 300px;
+    margin-left: -95px;
+    display: block;
+    background-image: url(../images/css-zen-garden-forbusiness.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    position: absolute;
+    bottom: -35px;
+    left: 30%;
+
+}
+
+/**
+ * Neon strip across the page
+ */
+h1::after{
+    content: '';
+    height: 110px;
+    width: 100%;
+    display: block;
+    background-image: url(../images/neon.png);
+    background-size: auto 451px;
+     
+    position: absolute;
+    bottom: 0;    
+   
+}
+
+/**
+ * Site Footer
+ */
+footer {
+    text-align: center;
+}
+
+/**
+ * Sidebar
+ */
+.sidebar {
+    text-align: center;
+}
+    
+/* sidebar lightbulb */
+.sidebar::before{
+    content: '';
+    height: 250px;
+    width: 100%;
+    display: block;
+    background-image: url(../images/neon-bulb.png);
+    background-size: auto 250px;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    
+    animation: flash 3s infinite;
+}
+
+/* common settings to all sidebar sections */
+.design-selection,
+.design-archives,
+.zen-resources {
+    font-size: 21px;
+    margin-bottom: 50px;
+}
+
+/* spacing between links */
+.design-selection li {
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
+/* force links to wrap */
+.design-selection a {
+    display: block;
+}
+
+/**
+ * Desktop Layout
+ */
+
+@media only screen and (min-width: 950px) {
+    body{
+        font-size: 21px;
+    }
+    
+  /**
+    * Header Image
+    */
+    h1 {
+        background-image: url(../images/opensign.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+  /**
+    * Site title that is acting as the header
+    */
+    h1::before {
+        height: 222px;
+        width: 490px;
+        left: 18%;
+        bottom: 50px;
+        
+    }
+    
+  /**
+    * Two-Column Layout
+    */
+    h2,
+    .summary,
+    .preamble,
+    .main {
+        max-width: 620px;
+        padding-right: 300px;
+        padding-left: 10px;
+    }
+    
+  /**
+    * Sidebar
+    */
+    .sidebar {
+        width: 300px;
+        position: absolute;
+        top: 320px;
+        left: 50%;
+        margin-left: 170px;
+    }
+}
+
+/**
+ * CSS Animations
+ */
+
+@keyframes flash{
+    from, 50%  to{
+        opacity: 1;
+    }
+    
+    75% {
+        opacity: 0;
+    }
+}
+
+
+

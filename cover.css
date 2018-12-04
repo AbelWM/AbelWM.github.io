@@ -50,7 +50,7 @@ body {
 /* Padding for spacing */
 
 .inner {
-    padding: 30px;
+    padding: 50px;
 }
 
 
@@ -124,7 +124,7 @@ body {
 .mastfoot {
     color: red;
     /* IE8 proofing */
-    /* color: rgba(255, 255, 255, .5); */ 
+    /* color: rgba(255, 255, 255, .5); */
 }
 
 
